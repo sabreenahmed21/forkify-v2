@@ -1,0 +1,23 @@
+
+$media-mob :"max-width : 414px";
+$media-tab : "max-width : 992px";
+
+:root {
+  --main-background: #D5CABD;
+  --main-head:#4E8397;
+  --main-body: #4B4453;
+  --white: #fff;
+  --ingredient:#f2efee;
+  --color:#000;
+  --secondary-background : linear-gradient(to left top, #4e8397, #3880aa, #397abb, #596fc4, #845ec2);
+};
+
+.dark-mode {
+  --main-background:#424242;
+  --main-head: #176B87;
+  --main-body: #fff;
+  --white: #303030;
+  --ingredient:#383838;
+  --color:#fff;
+  --secondary-background : linear-gradient(to left top, #35858b, #2b7f8b, #21788a, #1a7289, #176b87);
+};

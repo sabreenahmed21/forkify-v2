@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--icon of website-->
+    <link rel="shortcut icon" href="/icon.323200e9.png">
+    <title>forkify</title>
+    <!--font-awesome-->
+    <script src="https://kit.fontawesome.com/a77dc4a317.js" crossorigin="anonymous"></script>
+    <!--google-fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--link scss-->
+    <link rel="stylesheet" href="/index.90577a26.css">
+  </head>
+  <body>
+    <!--Nav-->
+    <nav class="navbar navbar-expand-md bg-body-tertiary navbar-light" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#index.html">
+          <img src="/logo.726d37a8.png" alt="photo" id="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex ms-auto search" role="search">
+            <input class="form-control" type="search" placeholder="Search over 1,000,000 recipes..." aria-label="Search">
+            <button class="btn" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i><span>Search</span>
+            </button>
+          </form>
+          <ul class="navbar-nav ms-auto text-center fs-5">
+            <li class="nav-item me-3">
+              <button class="nav-link btn-addrecipe" aria-current="page">
+                <i class="fa-solid fa-pen-to-square"></i>
+                ADD RECIPE
+              </button>
+            </li>
+            <li class="nav-item me-3">
+              <button class="nav-link btn-bookmark">
+                <i class="fa-regular fa-bookmark"></i>
+                <span> BOOKMARKS</span>
+              </button>
+              <div class="bookmarks">
+                <ul class="bookmarks_list">
+                  <div class="message">
+                    <i class="fa-regular fa-face-smile"></i>
+                    <p>No bookmarks yet. Find a nice recipe and bookmark it</p>
+                  </div>
+                  <!--
+                    <li class="preview">
+                    <a class="preview_link " href="#">
+                      <figure class="preview_fig">
+                        <img src="src/img/icon.png" alt="img">
+                      </figure>
+                      <div class="preview_data">
+                        <h4 class="preview_title">pizza</h4>
+                        <p class="preview_publisher">pizza pizza pizza</p>
+                      </div>
+                    </a>
+                  </li>
+                  -->
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item me-3">
+              <div class="dark">
+                <input type="checkbox" class="toggle-checkbox" checked="">
+                <div class="toggle-switch"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-lg-4 p-3 search-results">
+        <ul class="results"></ul>
+        <div class="pag"></div>
+        <p class="copy">
+          Copyright &copy;2023 All rights reserved | This template is made with
+          ❤ by
+          <a href="https://github.com/sabreenahmed21" target="_blank">Sabreen Ahmed</a>
+        </p>
+      </div>
+      <div class="col-lg-8 recipe">
+        <div class="message d-flex justify-content-center align-items-baseline fw-bold">
+          <i class="fa-regular fa-face-smile p-1"></i>
+          <p>Start by searching for a recipe or an ingredient. Have fun!</p>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="add-recipe-window hidden">
+      <button class="btn--close-modal btn">×</button>
+      <form class="upload shadow p-5">
+        <div class="row">
+          <div class="upload__column col-lg-5">
+            <h3 class="upload__heading">Recipe data</h3>
+            <label>Title</label>
+            <input value="TEST23" required="" name="title" type="text" class="form-control">
+            <label>URL</label>
+            <input value="TEST23" required="" name="sourceUrl" type="text" class="form-control">
+            <label>Image URL</label>
+            <input value="TEST23" required="" name="image" type="text" class="form-control">
+            <label>Publisher</label>
+            <input value="TEST23" required="" name="publisher" type="text" class="form-control">
+            <label>Prep time</label>
+            <input value="23" required="" name="cookingTime" type="number" class="form-control">
+            <label>Servings</label>
+            <input value="23" required="" name="servings" type="number" class="form-control">
+          </div>
+          <div class="upload__column col-lg-5">
+            <h3 class="upload__heading">Ingredients</h3>
+            <label>Ingredient 1</label>
+            <input value="0.5,kg,Rice" type="text" required="" name="ingredient-1" placeholder="Format: Quantity,Unit,Description" class="form-control">
+            <label>Ingredient 2</label>
+            <input value="1,,Avocado" type="text" name="ingredient-2" placeholder="Format: Quantity,Unit,Description" class="form-control">
+            <label>Ingredient 3</label>
+            <input value=",,salt" type="text" name="ingredient-3" placeholder="Format: Quantity,Unit,Description" class="form-control">
+            <label>Ingredient 4</label>
+            <input type="text" name="ingredient-4" placeholder="Format: Quantity,Unit,Description" class="form-control">
+            <label>Ingredient 5</label>
+            <input type="text" name="ingredient-5" placeholder="Format: Quantity,Unit,Description" class="form-control">
+            <label>Ingredient 6</label>
+            <input type="text" name="ingredient-6" placeholder="Format: Quantity,Unit,Description" class="form-control">
+          </div>
+        </div>
+        <button class="btn upload__btn">
+          <i class="fa-solid fa-upload"></i>
+          <span>Upload (DISABLED)</span>
+        </button>
+      </form>
+    </div>
+    <!--Bootstrap js-->
+    <script src="/index.1edf72d2.js"></script>
+    <!--main js-->
+    <script src="/index.18dbc454.js" defer=""></script>
+  </body>
+</html>
