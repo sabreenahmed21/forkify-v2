@@ -18,7 +18,7 @@
 1. Get a free API Key at [Forkify API_KEY](https://forkify-api.herokuapp.com/v2)
 2. Clone the repo
    ```sh
-   git clone https://github.com/sabreenahmed21/Forkify.git
+   git clone https://github.com/sabreenahmed21/forkify-v2.git
    ```
 3. Enter your API in `config.js`
    ```JS
