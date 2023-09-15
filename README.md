@@ -1,10 +1,7 @@
 <h1>Forkify</h1> 
 <p>A recipe search application made with javascript.</p>
-<hr>
-<p>Light mode</p>
-<img src="https://github.com/sabreenahmed21/Forkify/assets/117122016/60aa0497-46c5-4ef2-a007-63a4a5dee9db" />
-<p>Dark mode</p>
-<img src="https://github.com/sabreenahmed21/Forkify/assets/117122016/9fd01eab-4d06-4588-acf6-bb7c24dcfa0a" />
+
+
 <h3>Features</h3> 
 
 
@@ -12,6 +9,7 @@
 - View recipe details: See ingredients, cooking instructions, and serving size.
 - Bookmark recipes: Save your favorite recipes for later.
 - Add recipes: Create and share your own recipes.
+- Dark & Light Mode.
 
 ### Installation
 
